@@ -1,8 +1,5 @@
 # Docker image for Android
 
-### based on
-https://github.com/faiza-aslam/android-docker-image
-
 [![docker icon](https://dockeri.co/image/faizaaslam/vend-android)](https://hub.docker.com/r/faizaaslam/vend-android/)
 [![Build Status](https://travis-ci.com/faiza-aslam/android-docker-image.svg?branch=master)](https://travis-ci.com/faiza-aslam/android-docker-image)
 
@@ -21,13 +18,11 @@ It contains following components:
 
     docker build -t android-image .
 
-## Usage
-
 ### Using image in Bitbucket pipeline
 
 Here is an example of `bitbucket-pipelines.yml`
 
-    image: faizaaslam/vend-android
+    image: faizaaslam/vend-android:latest
 
     pipelines:
       default:
