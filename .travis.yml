@@ -5,7 +5,7 @@ before_install:
   - travis_wait 50 docker build -t android-image .
 
 script:
-  - docker run -it --rm android-image android --version
+  - docker run -it --rm android-image android list sdk
 
 after_script:
   - docker images
